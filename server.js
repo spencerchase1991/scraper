@@ -5,7 +5,6 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 var path = require("path");
 
-// Requiring Note and Article models
 var Note = require("./models/Note.js");
 var Article = require("./models/Article.js");
 
@@ -13,25 +12,21 @@ var Article = require("./models/Article.js");
 var request = require("request");
 var cheerio = require("cheerio");
 
-// Set mongoose to leverage built in JavaScript ES6 Promises
 mongoose.Promise = Promise;
 
-//Define port
 var port = process.env.PORT || 3000
 
-// Initialize Express
 var app = express();
 
-// Use morgan and body parser with our app
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
   extended: false
 }));
 
-// Make public a static dir
+
 app.use(express.static("public"));
 
-// Set Handlebars.
+.
 var exphbs = require("express-handlebars");
 
 app.engine("handlebars", exphbs({
@@ -41,7 +36,10 @@ app.engine("handlebars", exphbs({
 app.set("view engine", "handlebars");
 
 // Database configuration with mongoose
-mongoose.connect("mongodb://heroku_jmv816f9:5j1nd4taq42hi29bfm5hobeujd@ds133192.mlab.com:33192/heroku_jmv816f9");
+mongoose.connect("mongodb://heroku_njgfqlkn:5j1nd4taq42hi29bfm5hobeujd@ds133192@ds253567.mlab.com:53567/heroku_njgfqlkn");
+
+
+
 //mongoose.connect("mongodb://localhost/mongoscraper");
 var db = mongoose.connection;
 
