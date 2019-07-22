@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/images/background.jpg");
+    background-image: url("https://images.unsplash.com/photo-1521716250348-c4ae4ff1df43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=564&q=80");
     padding-top: 70px;
 }
 
@@ -14,4 +14,9 @@ body {
 
 #scrape {
     margin: 8px 0px;
+}
+
+.jumbotron {
+    background-color: rgb(73, 145, 111);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
